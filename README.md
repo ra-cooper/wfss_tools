@@ -1,5 +1,4 @@
-# wfss_tools
-## Example notebooks for working with NIRCam WFSS Data
+# Example notebooks for working with NIRCam WFSS Data
 
 Some example notebooks for working with JWST data. The three notebooks are designed to work together and follow the same file structure. The extraction procedure uses grizli as its core, details of which can be found [here](https://github.com/gbrammer/grizli)
 
