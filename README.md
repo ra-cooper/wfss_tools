@@ -14,3 +14,4 @@ Notebook utilising grizli to initialise and build footprints. Requires both GRIS
 ## 3. wfss_extraction.ipynb
 
 Notebook utilising grizli to extract spectra for a given list of coordinates. This notebook can perform extraction across multiple filters, grisms, and dispersion directions. Outputs include stacked 2D spectra and visualisations.
+
