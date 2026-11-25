@@ -1,18 +1,24 @@
+# Update 25/11/26
+
+New example notebooks have been added. These are much more streamlined and make better use of grizli's built-in routines.
+
+
 # Example notebooks for working with NIRCam WFSS Data
 
 Some example notebooks for working with JWST NIRCam WFSS data. The three notebooks are designed to work together and follow the same file structure. The extraction procedure uses grizli as its core, details of which can be found [here](https://github.com/gbrammer/grizli)
 
-## 0.0 wfss_data_reduction.ipynb
+## Notebook 00_wfss_data_reduction.ipynb
 
-Notebook for reducing NIRCam WFSS data. Performs background subtraction and continuum subtraction with emission line masking. The notebook automatically detects filters and GRISMS and adjusts the reduction procedure accordingly.
+Notebook for reducing NIRCam WFSS data. Performs background subtraction and continuum subtraction with emission line masking. The notebook automatically detects filters and GRISMS and adjusts the reduction procedure accordingly. This notebook can be used if you intend on extracting spectra manually (without grizli)
 
-## 1.0 wfss_initialisation.ipynb
+## Notebook 01_prep_wfss_data.ipynb
 
-Notebook utilising grizli to initialise and build footprints. Requires both GRISM and direct images of matching filters.
+Notebook demonstration on using grizli to initiate WFSS imaging and produce contamination models from a segmentation map and direct imaging.
 
 
-## 2.0 wfss_extraction.ipynb
+## Notebook 02_extraction_stacking.ipynb
 
-Notebook utilising grizli to extract spectra for a given list of coordinates. This notebook can perform extraction across multiple filters, grisms, and dispersion directions. Outputs include stacked 2D spectra and visualisations.
-**Note:** If you want to use files produced by notebook 0, you must remove the contamination modelling from this notebook.
+Should be run after Notebook 01. Performs the extraction and stacking for objects in a target catalogue.
+
+
 
