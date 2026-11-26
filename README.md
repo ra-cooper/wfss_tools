@@ -5,11 +5,15 @@ New example notebooks have been added. These are much more streamlined and make 
 
 # Example notebooks for working with NIRCam WFSS Data
 
-Some example notebooks for working with JWST NIRCam WFSS data. The three notebooks are designed to work together and follow the same file structure. The extraction procedure uses grizli as its core, details of which can be found [here](https://github.com/gbrammer/grizli)
+Some example notebooks for working with JWST NIRCam WFSS data. The three notebooks are designed to work together and follow the same file structure. The extraction procedure uses grizli as its core, details of which can be found [here](https://github.com/gbrammer/grizli).
 
 ## Notebook 00_wfss_data_reduction.ipynb
 
-Notebook for reducing NIRCam WFSS data. Performs background subtraction and continuum subtraction with emission line masking. The notebook automatically detects filters and GRISMS and adjusts the reduction procedure accordingly. This notebook can be used if you intend on extracting spectra manually (without grizli)
+Notebook for reducing NIRCam WFSS data. Performs background subtraction and continuum subtraction with emission line masking. The notebook automatically detects filters and GRISMS and adjusts the reduction procedure accordingly. This notebook can be used if you intend on extracting spectra manually (without grizli).
+
+## Notebook 00a_prep_direct_images.ipynb
+
+Take direct images from the DJA and produce a detection image, segmentation image and cropped LW imaging for contamination purposes. The produced images are used in the other example notebook.
 
 ## Notebook 01_prep_wfss_data.ipynb
 
